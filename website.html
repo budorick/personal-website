@@ -7,62 +7,92 @@
     <meta name="description" content="Abby Budorick is a Computer Science and Business Administration student at USC."/>
     <meta name="keywords" content="Abby Budorick, Budorick, USC, Los Angeles"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="website-style.css" type="text/css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="website.css" type="text/css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
   </head>
   <body>
-    <div class="header">
-      <h1>Abby Budorick</h1>
-      <h2>Hey there! I'm Abby, thanks for stopping by!</h2>
+    <nav class="navbar navbar-default">
+      <div class="navbar-header">
+      <!-- <div class="col-sm-5"> -->
+        <h1><a href="#" onclick="click0()">Abby Budorick</a></h1>
+        <!-- <h2>Hey there! I'm Abby, thanks for stopping by!</h2> -->
+      <!-- </div>
+      <div class="navbar-header col-sm-7"> -->
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Interests</a></li>
+        <li><a href="#">Involvement</a><li>
+      </ul>
+      </div>
+    </nav>
+    <div class="container fluid">
+      <img class="cover" id="me" onclick="click1()" src="cover.png" alt="cover">
     </div>
-      <img class="cover" src="cover.png" alt="cover">
-      <div class="section">
-        <h3>Education</h3>
-        <h4>University of Southern California, Class of 2020</h4>
-        <p>B.S. in Computer Science and Business Administration</p>
-        <h4>First Colonial High School</h4>
-        <p>Graduated 3rd in a class of 415 with a GPA of 4.55</p>
+    <div class="container fluid">
+      <div class="row">
+        <div class="section col-sm-12">
+          <h3 class="education">Education</h3>
+          <h4>University of Southern California, Class of 2020</h4>
+          <p>B.S. in Computer Science and Business Administration</p>
+          <h4>First Colonial High School</h4>
+          <p>Graduated 3rd in a class of 415 with a GPA of 4.55</p>
+        </div>
       </div>
-      <div class="section">
-        <h3>Interests</h3>
-        <p><strong>Photography.</strong> My dog, Kegan, is my muse. Just look at her!</p>
-        <img class="inline img" src="kegan-beach.jpg" alt="Kegan">
-        <img class="inline img" src="kegan_ball.jpg" alt="Kegan">
-        <img class="inline img" src="kegan-shake.png" alt="Kegan">
-        <p><strong>Graphic design.</strong> I have experience with Adobe Photoshop and Lightroom, and I earned my Adobe Illustrator Certification in the Spring of 2016.</p>
-        <p><strong>Adventure!</strong> Whether I'm snowboarding, rockclimbing, or simply relaxing on the beach, I can never get enough of the Great Outdoors.</p>
+    </div>
+    <div class="section container fluid">
+      <h3 class="interests">Interests</h3>
+      <div class="row">
+        <div class="col-sm-12">
+          <p><strong>Photography.</strong> My dog, Kegan, is my muse. Just look at her!</p>
+          <img class="inline img" src="kegan-beach.jpg" alt="Kegan">
+          <img class="inline img" src="kegan_ball.jpg" alt="Kegan">
+          <img class="inline img" src="kegan-shake.png" alt="Kegan">
+          <p><strong>Graphic design.</strong> I have experience with Adobe Photoshop and Lightroom, and I earned my Adobe Illustrator Certification in the Spring of 2016.</p>
+          <p><strong>Adventure!</strong> Whether I'm snowboarding, rockclimbing, or simply relaxing on the beach, I can never get enough of the Great Outdoors.</p>
+        </div>
       </div>
-      <div class="section">
-        <h3>Involvement</h3>
-        <div class="present">
-          <div class="activity">
-          <a href="http://scopeusc.com/" target="_blank"><img id="scope" src="scope.png" alt="Scope"></a>
-            <div class="text">
-              <h4>Scope</h4>
-              <p>A USC student organization of students working on software development projects.</p>
-            </div>
+    </div>
+    <div class="section container">
+      <h3 class="involvement">Involvement</h3>
+      <div class="present">
+        <div class="activity row">
+          <div class="col-sm-4">
+            <a href="http://scopeusc.com/" target="_blank"><img id="scope" src="scope.png" alt="Scope"></a>
           </div>
-          <div class="activity">
+          <div class="text col-sm-8">
+            <h4>Scope</h4>
+            <p>A USC student organization of students working on software development projects.</p>
+          </div>
+        </div>
+        <div class="activity row">
+          <div class="col-sm-4">
             <a href="https://dornsife.usc.edu/joint-educational-project" target="_blank"><img class="activity" src="jep.png" alt="JEP"></a>
-            <div class="text">
-              <h4>Junior Educational Project</h4>
-              <p>Through the Math Mentor Program, I tutor 5th grade students at Vermont Avenue Elementary in math.</p>
-            </div>
           </div>
-          <div class="activity">
+          <div class="text col-sm-8">
+            <h4>Junior Educational Project</h4>
+            <p>Through the Math Mentor Program, I tutor 5th grade students at Vermont Avenue Elementary in math.</p>
+          </div>
+        </div>
+        <div class="activity row">
+          <div class="col-sm-4">   
             <a href="http://mureality.com/" target="_blank"><img id="mureality" src="mureality.png" alt="Mureality"></a>
-            <div class="text">
-              <h4>Mureality</h4>
-              <p>A USC student organization focused sharing art throughout USC and the surrounding community.</p>
-            </div>
           </div>
-          <div class="activity">
-            <a href="http://camp4autism.com/" target="_blank"><img id="fact" src="fact.png" atl="FACT"></a>
-            <div class="text">
-              <h4 class="inline">F.A.C.T.</h4>
-              <p class="inline">(Families of Autistic Children in Tidewater)</p>
-              <p>A Virginia Beach based organization providing recreational activities to children with autism.</p>
-              <ul>
+          <div class="text col-sm-8">
+            <h4>Mureality</h4>
+            <p>A USC student organization focused sharing art throughout USC and the surrounding community.</p>
+          </div>
+        </div>
+        <div class="activity row">
+          <div class="col-sm-4">
+            <a href="http://camp4autism.com/" target="_blank" class="img-responsive"><img id="fact" src="fact.png" atl="FACT"></a>
+          </div>  
+          <div class="text col-sm-8">
+            <h4 class="inline">F.A.C.T.</h4>
+            <p class="inline">(Families of Autistic Children in Tidewater)</p>
+            <p>A Virginia Beach based organization providing recreational activities to children with autism.</p>
+            <ul>
               <li>Camp Gonnawannagoagin - summer camp</li>
               <li>iCan Ride - bike camp</li>
               <li>Scavenger Hunt. fundraising event at the Virginia Beach boardwalk</li>
@@ -70,14 +100,20 @@
             </div>
           </div>
         </div>
-        <br />
-        <h4> - past - </h4>
-        <br />
-        <br />
+        <div class="row">
+          <br />
+          <div class="col-sm-12">
+            <h4> - past - </h4>
+          </div>
+          <br />
+          <br />
+        </div>
         <div class="past">
-          <div class="activity">
-            <a href="http://www.firstcolonialhs.vbschools.com/pages/students/student_activities/clubs_yearbook.asp" target="_blank"><img class="activity" src="yearbook.png" atl="FCHS Yearbook"></a>
-            <div class="text">
+          <div class="activity row">
+            <div class="col-sm-4">
+              <a href="http://www.firstcolonialhs.vbschools.com/pages/students/student_activities/clubs_yearbook.asp" target="_blank"><img class="activity" src="yearbook.png" atl="FCHS Yearbook"></a>
+            </div>
+            <div class="text col-sm-8">
               <h4 class="inline"><em>The Heritage </em></h4>
               <p class="inline">(First Colonial High School Yearbook)</p>
               <p>Editor in Chief</p>
@@ -88,9 +124,11 @@
               </ul>
             </div>
           </div>
-          <div class="activity">
-            <a href="http://www.operationsmile.org/" target="_blank"><img class="inline activity" src="opsmile.jpg" act="OpSmile"></a>
-            <div class="inline text">
+          <div class="activity row">
+            <div class="col-sm-4">
+              <a href="http://www.operationsmile.org/" target="_blank"><img class="inline activity" src="opsmile.jpg" act="OpSmile"></a>
+            </div>
+            <div class="inline text col-sm-8">
               <h4>Operation Smile</h4>
               <p>A non-profit organization that provides surgical care for children around the world.</p>
               <p>As a student volunteer, I helped fundraise and raise awareness.</p>
@@ -99,21 +137,34 @@
         </div>
       </div>
     <hr />
-    <div class="footer">
-      <div class="about">
+    <div class="footer row">
+      <div class="about col-sm-4">
         <h3>About Me</p>
         <p>Born and raised in Virginia Beach.</p>
         <p>Student at USC in Los Angeles.</p>
       </div>
-      <div id="contact">
+      <div id="contact col-sm-8">
         <h3>Contact Me</h3>
-        <a class="inline logo" href="mailto:budorick@usc.edu" target="_blank"><img src="mail.png" alt="eMail" style="width:40px;height:40px;"></a>
-        <a class="inline logo" href="https://www.linkedin.com/in/abby-budorick-648581124/" target="_blank"><img src="linkedin.svg" alt="Linkedin" style="width:40px;height:40px;"></a>
-        <a class="inline logo" href="https://www.instagram.com/abbybudorick/" target="_blank"><img src="instalogo.png" alt="Instagram" style="width:40px;height:40px;"></a>
-        <a class="inline logo" href="https://www.facebook.com/abudorick" target="_blank"><img src="facebook.png" alt="Facebook" style="width:40px;height:40px;"></a>
+        <a class="inline logo" href="mailto:budorick@usc.edu" target="_blank"><img src="mail.png" alt="eMail"></a>
+        <a class="inline logo" href="https://www.linkedin.com/in/abby-budorick-648581124/" target="_blank"><img src="linkedin.svg" alt="Linkedin"></a>
+        <a class="inline logo" href="https://www.instagram.com/abbybudorick/" target="_blank"><img src="instalogo.png" alt="Instagram"></a>
+        <a class="inline logo" href="https://www.facebook.com/abudorick" target="_blank"><img src="facebook.png" alt="Facebook"></a>
         <!-- <a class="inline logo" href="https://twitter.com/abbybudorick" target="_blank"><img src="twitter.png" alt="Twitter" style="width:40px;height:40px;"></a> -->
       </div>
     </div>
+
+
+
+    <script>
+    function click0() {
+      document.getElementById("me").style.border = "3px solid black";
+    }
+    function click1() {
+      document.getElementById("me").style.border = "none";
+    }
+
+
+    </script>
   </body>
 </html>
 
