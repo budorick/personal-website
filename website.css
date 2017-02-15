@@ -1,0 +1,185 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #F2F2FF;
+}
+
+p {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+li {
+  font-size: 16px;
+}
+
+.header {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: #212121;
+}
+
+.header h1, h2 {
+  color: #7CB9FF;
+}
+
+.header h2 {
+  text-transform: lowercase;
+}
+
+/* .cover {
+  height: auto;
+  width: 50%;
+  display: block;
+  position: relative;
+  top: 140px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.cover {
+  height: auto;
+  width: 100%;
+}
+
+.section {
+  margin: 20px 30px;
+  text-align: center;
+  position: relative;
+  top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  border: 1px solid LightGrey;
+}
+
+.activity {
+  width: 100%;
+  height: 200px;
+  padding-bottom: 20px;
+}
+
+.activity img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  right: 30px;
+  padding-left: 15px;
+}
+
+/*#scope {
+  height:auto;
+  width:200px;
+  position: relative;
+  top: 25%;
+}*/
+
+#scope {
+  height: 50%;
+  width: 100%;
+}
+
+#mureality {
+  height: 50%;
+  width: 100%;
+}
+
+/*#mureality {
+  height: auto;
+  width: 200px;
+  position: relative;
+  top: 25%;
+}*/
+
+/*#fact {
+  height: 200px;
+  width: auto;
+}*/
+
+#fact {
+  height: 100%;
+  width: auto;
+}
+
+.text {
+  float: right;
+}
+
+
+.img {
+  width: 128px;
+  height: 128px;
+}
+
+.img:hover {
+  width: 200px;
+  height: 200px;
+}
+
+.inline {
+  display: inline;
+}
+
+hr {
+  position: relative;
+  top: 130px;
+}
+
+/*#contact {
+  float: right;
+}*/
+
+.about {
+  text-align: left;
+  display: block;
+  float: left;
+}
+
+.about p {
+  line-height: .7;
+}
+
+.footer {
+  text-align: right;
+  font-size: 20px;
+  position: relative;
+  top: 130px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.footer img:link {
+  background-color: White;
+}
+
+.footer img:visited {
+  background-color: White;
+}
+
+.footer img:hover {
+  border: 2px solid #7CB9FF;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.footer img:active {
+  border: 0px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
